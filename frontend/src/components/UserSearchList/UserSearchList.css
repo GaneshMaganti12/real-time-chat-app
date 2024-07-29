@@ -1,0 +1,33 @@
+.user-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+.user-list-item:first-child {
+  margin-top: 5px;
+}
+.user-list-item:last-child {
+  margin-bottom: 5px;
+  border-bottom: none;
+}
+.user-avatar {
+  background-color: #7b7b7b;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-logo {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f3f3f3;
+}
+.user-name {
+  font-size: 14px;
+}

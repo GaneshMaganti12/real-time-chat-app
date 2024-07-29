@@ -1,0 +1,146 @@
+.chat-user-messages-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+.chat-user-name {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: #383838;
+}
+.chat-user-messages-card {
+  background-color: #e2e2e2;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 15px;
+  gap: 30px;
+  overflow: auto;
+}
+.chat-message-input-card {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-user-messages-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 0px 20px;
+  overflow-y: auto;
+}
+.chat-user-messages-list::-webkit-scrollbar {
+  width: 0px;
+}
+.message-user-item-card {
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+  position: relative;
+  width: 40%;
+  margin-bottom: 6px;
+}
+.message-list-item {
+  width: 40%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 8px;
+}
+.message-user-item {
+  background-color: #9659b6;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.message-text {
+  color: #f4f4f4;
+  font-size: 14px;
+  width: 90%;
+  overflow-x: hidden;
+}
+.message {
+  color: #343434;
+  font-size: 14px;
+  width: 90%;
+  overflow-x: hidden;
+}
+.delete-icon {
+  font-size: 18px;
+  margin-top: 4px;
+  cursor: pointer;
+  color: #f4f4f4;
+}
+.chat-message-input-card {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.message-text-input {
+  width: 100%;
+  font-size: 16px;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #a7a7a7;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+.chat-message-button {
+  border: none;
+  background-color: #9659b6;
+  color: #f4f4f4;
+  padding: 8px 20px;
+  font-size: 16px;
+}
+.chat-message-button:focus {
+  outline: none;
+}
+.no-chat-messages {
+  font-size: 17px;
+  color: #838383;
+}
+.user-like-button-card {
+  position: absolute;
+  left: -4px;
+  bottom: -12px;
+  cursor: pointer;
+}
+.like-button-card {
+  position: absolute;
+  right: -2px;
+  bottom: -12px;
+  cursor: pointer;
+}
+.user-like-button {
+  font-size: 13px;
+  color: #ff6969;
+}
+.like-button {
+  font-size: 13px;
+  color: #fd1c1c;
+}
+.unlike {
+  color: #898989;
+}
+.like-button:active {
+  font-size: 20px;
+}

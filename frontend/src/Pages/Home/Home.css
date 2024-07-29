@@ -1,0 +1,33 @@
+.home-page-container {
+  background-image: url("https://img.freepik.com/free-vector/purple-bend-background-design-vector_53876-62369.jpg?t=st=1721886381~exp=1721889981~hmac=b4a7143051cdc6a6596f5e94fced420c31bba25460c313ce750337d8f348ce90&w=740");
+  width: 100vw;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 50px;
+}
+.home-page-card {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-page-title-card {
+  align-self: flex-start;
+}
+.home-quote {
+  font-size: 32px;
+  color: #383838;
+}
+.top {
+  margin-bottom: 20px;
+}
+.landing-page-image-card {
+  width: 80%;
+}
+.landing-page-image {
+  width: 100%;
+  height: 100%;
+}

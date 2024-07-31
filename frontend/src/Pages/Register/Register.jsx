@@ -62,10 +62,7 @@ function Register() {
         setMessage("");
       }
     } catch (error) {
-      if (error.response.status) {
-        setError(error.response.data.message);
-        setMessage("");
-      }
+      setError(error.response.data.message);
     }
 
     setUserDetails({

@@ -9,7 +9,7 @@ import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
-const ENDPOINT = "http://localhost:3002";
+const ENDPOINT = "https://chat-and-call-app.onrender.com";
 var socket;
 
 function UserChatMessages(props) {
@@ -61,6 +61,10 @@ function UserChatMessages(props) {
     socket = io(ENDPOINT);
     socket.emit("setup", userId);
     socket.on("connected", () => console.log("connect"));
+
+    return () => {
+      socket.off("setup");
+    };
   }, [userId]);
 
   useEffect(() => {

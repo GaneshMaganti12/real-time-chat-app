@@ -67,9 +67,7 @@ function Login() {
         setError(res.data.message);
       }
     } catch (error) {
-      if (error.response.status) {
-        setError(error.response.data.message);
-      }
+      setError(error.response.data.message);
     }
 
     setLoading(false);
